@@ -41,7 +41,6 @@ public class MainPageTest {
         driver.quit();
     }
 
-
     static Stream<Arguments> importantQuestionsProvider() {
         return Stream.of(
                 Arguments.of("Сколько это стоит? И как оплатить?", "Сутки — 400 рублей. Оплата курьеру — наличными или картой."),

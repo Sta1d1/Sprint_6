@@ -127,5 +127,4 @@ public class OrderPage {
         driver.findElement(orderCreatedModal).isDisplayed();
     }
 
-
 }
