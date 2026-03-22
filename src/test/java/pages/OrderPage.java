@@ -127,5 +127,4 @@ public class OrderPage {
         String element = driver.findElement(orderCreatedModal).getText();
         assertEquals("Посмотреть статус", element);
     }
-
 }
