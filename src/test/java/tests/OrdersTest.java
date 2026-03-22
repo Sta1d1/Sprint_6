@@ -30,6 +30,7 @@ public class OrdersTest {
         orderPage.addOrderInformationAndClickNext("Иван", "Иванов", "г. Москва, ул. Ленина, д. 1", "Марьино", "+79991234567");
         orderPage.addOrderScoterInformationAndClickOrderButton("25.07.2026", "двое суток", "black","Тестовый комментарий");
         orderPage.checkOrderCreatedModal();
+
     }
 
     @Test

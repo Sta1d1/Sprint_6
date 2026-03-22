@@ -35,7 +35,7 @@ public class OrderPage {
     private By confirmOrderButton = By.xpath("//div[@class='Order_Buttons__1xGrp']//button[text()='Да']");
 
     // Модалка что заказа создан
-    private By orderCreatedModal = By.className("Order_Modal__YZ-d3");
+    private By orderCreatedModal = By.className("Order_NextButton__1_rCA");
 
     public OrderPage(WebDriver driver) {
         this.driver = driver;
@@ -124,7 +124,8 @@ public class OrderPage {
 
     public void checkOrderCreatedModal() {
         setConfirmOrderButton();
-        driver.findElement(orderCreatedModal).isDisplayed();
+        String element = driver.findElement(orderCreatedModal).getText();
+        assertEquals("Посмотреть статус", element);
     }
 
 }
